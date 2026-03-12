@@ -36,7 +36,7 @@ export default function Hero() {
         {/* Redes sociais */}
         <SocialLinks />
 
-        {/* download CV */}
+        {/* botão CV */}
         <div className="mt-6 flex justify-center md:justify-start">
           <a
             href={
@@ -44,7 +44,8 @@ export default function Hero() {
                 ? "/curriculos/resume-onedmilson-en.pdf"
                 : "/curriculos/curriculo-onedmilson-ptbr.pdf"
             }
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-6 py-2 rounded-md bg-[#007ACC] dark:bg-[#0E639C] text-white font-bold hover:bg-[#005A9E] dark:hover:bg-[#1177BB] transition-colors"
           >
             {t("download_cv")}
